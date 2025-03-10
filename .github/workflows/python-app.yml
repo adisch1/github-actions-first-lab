@@ -1,0 +1,14 @@
+name: First Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello Message
+        run: |
+          echo "Hello from GitHub Actions! The time is 2024-02-23 18:45:12.123456"
